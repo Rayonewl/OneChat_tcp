@@ -93,6 +93,7 @@ namespace OneChat
             int length;
             while (true)
             {
+                Thread.sleep(10);//线程添加sleep休眠函数，解决占用sleep过高的问题
                 if (null != TcpClient)
                 {
                     try
